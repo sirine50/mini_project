@@ -29,8 +29,8 @@ if 2 <= len(file_names) <= 5:
             if duration > 0:
                 break
         except:
-            print("The duration needs to be an integer!!")     
-    iio.imwrite(f"{gif_name}.gif", images, duration=duration, loop=0)      
+            print("The duration needs to be a positive integer!!")     
+    iio.imwrite(f"{gif_name}.gif", images, duration=duration, loop=0)     
 else:
     print("The number of images needs to be between 2 and 5")
 
